@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa">
+	<head>
+		<meta charset="utf-8">
+		<title>فرم ثبت نام</title>
+	  <link href="./styles/style.css" rel="stylesheet">
+	</head>
+	<script defer src="./scripts/jquery-3.6.0.min.js"></script>
+	<script defer src="./scripts/app.js"></script>
+	<body>
+	  <form action="" method="" class="form-container">
+			<h2 class="form-header">فرم ثبت‌نام</h2>
+	    <ol class="inputs-container">
+	    	<li class="input-container">
+					<label for="full_name">نام و نام خانوادگی</label>
+					<input type="text" placeholder="نام و نام خانوادگی را وارد کنید" name="full_name" id="full_name">
+				</li>
+				<li class="input-container">
+					<label for="national_code">کد ملی</label>
+					<input type="text" name="national_code" validation="true" 
+            placeholder="کد ملی خود را وارد کنید" id="national_code">
+				</li>
+				<li class="input-container">
+					<label for="phone">شماره تلفن</label>
+					<input type="phone" name="phone" validation="true" placeholder="شماره تلفن خود را وارد کنید" id="phone">
+				</li>
+	      <li class="input-container">
+					<label for="email">ایمیل</label>
+					<input type="text" name="email" validation="true" placeholder="ایمیل خود را وارد کنید" id="email">
+				</li>
+				<li class="error">
+					<p>*اطلاعات مشخص شده را <em>بدرستی</em> وارد کنید</p>
+				</li>
+	    </ol>
+	    <div class="input-container submit"><input type="submit" value="ثبت نام"></div>
+	   </form>
+	</body>
+</html>

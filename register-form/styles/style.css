@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Vazir-Light";
+    src: url("../fonts/Vazir-Light.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Vazir-Light.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("../fonts/Vazir-Light.otf") format("opentype"),
+      /* Open Type Font */ url("../fonts/Vazir-Light.svg") format("svg"),
+      /* Legacy iOS */ url("../fonts/Vazir-Light.ttf") format("truetype"),
+      /* Safari, Android, iOS */ url("../fonts/Vazir-Light.woff") format("woff"),
+      /* Modern Browsers */ url("../fonts/Vazir-Light.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html {
+    box-sizing: border-box;
+    font-family: "Vazir-Light";
+    direction: rtl;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+}
+
+label {
+    font-size: .9em;
+}
+form.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 1em .75em;
+    width: 30%;
+}
+
+h2.form-header {
+    text-align: center;
+    border-bottom: 1px solid rgb(108, 174, 224);
+    margin: 1em 0;
+    font-weight: normal;
+}
+
+ol.inputs-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+li.input-container, .error {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+li.input-container input[type=text], input[type=phone]{
+    padding: .5em .75em;
+    width: 100%;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.input-container input[type=submit] {
+    cursor: pointer;
+    background-color: rgb(108, 174, 224);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: .25em 0;
+    font-size: 1.2em;
+    border-radius: 25px;
+    width: 45%;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container input[type=submit]:hover {    
+    outline: 1px solid gray;
+}
+
+li.input-container .invalid {
+    border: 3px solid rgb(255, 0, 0)  !important;
+}
+
+li.error{
+    color: rgb(255, 0, 0);
+    display: none;
+}
