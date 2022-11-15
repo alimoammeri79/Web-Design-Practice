@@ -1,1 +1,1 @@
-Simple projects with web technoligies.
+Simple projects with web technologies.
